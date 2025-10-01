@@ -2,6 +2,7 @@ package Stepdefinitions;
 
 import Pages.Loginpage;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -70,7 +71,7 @@ public class LoginSteps {
     }
 
     @Test(priority = 3)
-    @When("clicks the login button")
+    @And("clicks the login button")
     public void clicks_the_login_button(){
         loginPage.clickLoginBtn();
         LoginSteps.timeout2000();
